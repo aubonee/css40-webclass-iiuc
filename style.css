@@ -1,0 +1,137 @@
+h2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+
+.text-box {
+    position: relative;
+    width: 160px;
+    height: 60px;
+    margin: 30px 80px 30px 80px;
+    /* margin-right: 140px; */
+    border: 2px solid #000000;
+    top: 100px;
+    display: inline-block;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.tooltip-text {
+    position: absolute;
+    width: 100px;
+    height: 20px;
+    z-index: 1;
+    background-color: #000000;
+    color: #f7f7f7;
+    padding: 5px;
+    text-align: center;
+    /* top: -10%;
+    left: 10%; */
+    border-radius: 5px;
+    visibility: hidden;
+}
+
+.text-box:hover .tooltip-text {
+    visibility: visible;
+}
+
+#top {
+    top: -30%;
+    left: 10%;
+}
+
+#top::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+}
+
+#left {
+    top: 30%;
+    left: -80%;
+}
+
+#left::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent transparent black;
+}
+
+#right {
+    top: 30%;
+    right: -80%;
+}
+
+#right::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent black transparent transparent;
+}
+
+#bottom {
+    bottom: -50%;
+    right: 15%;
+}
+
+#bottom::before {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    right: 50%;
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent black transparent;
+}
+
+
+/* .text-box2 {
+    position: relative;
+}
+
+.tooltip-text2 {
+    position: absolute;
+    width: 100px;
+    height: 20px;
+    z-index: 1;
+    background-color: #000000;
+    color: #f7f7f7;
+    padding: 5px;
+    text-align: center;
+    top: -50%;
+    left: 100%;
+    border-radius: 5px;
+    visibility: hidden;
+}
+
+.text-box2 .tooltip-text2::after {
+    content: "";
+    position: absolute;
+    top: -50%;
+    right: -100%;
+    margin-left: -5px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+}
+
+.text-box2:hover .tooltip-text2 {
+    visibility: visible;
+} */
